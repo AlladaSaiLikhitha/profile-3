@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+   
+    <style>
+        /* General Styles */
+       /* Reset some default styles */
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+header,footer {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header h1 {
+    margin: 0em;
+}
+header{
+    position: fixed;
+    width:100vw;
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+nav ul li a {
+    color:#f4f4f4;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+nav ul li a i {
+    margin-right: 0.5em;
+}
+
+nav ul li a:hover {
+    color: #cefa76;
+}
+
+section {
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+
+        #home {
+            background: #d2e9f8;
+            padding: 8rem 0;
+            display: flex;
+
+            /* text-align: center; */
+            height: 100vh;
+        }
+        #home .text{
+            padding-left: 100px;
+            width:50%;
+            padding-top: 6%;
+        }
+        #home .text button {
+            border-radius: 15px;
+            height: 40px;
+            width: 100px;
+            background-color: #000;
+        
+        }
+        #home .text button a{
+            color: #fff;
+
+        }
+
+
+        #home img {
+            margin-left: 95px;
+            border-radius: 10%;
+        }
+
+
+        #about {
+            background:#f5bfad;
+            height: 100vh;
+        }
+        #about #text{
+            padding-top:100px ;
+            text-align: center;
+        }
+        #about #boxes{
+            display:flex;
+            padding: 50px;
+            margin-left: 170px;
+            
+        }
+        #about #box{
+            width: 500px;
+            height: 250px;padding: 30px;
+            background-color: darkseagreen;
+            margin-bottom: 30px;
+            border-radius: 30px;
+            margin-right: 50px;
+        }
+
+        
+        #skills  {
+            text-align: center;
+        }
+        #skills ul{
+            display: flex;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+        #skills p {
+            margin-right: 100px;
+            background-color: darkseagreen;
+            height: 53px;
+            width:500px;
+            border-radius: 10px;
+            text-align: center;
+            justify-items: center;
+        }
+
+
+       
+         
+        #projects {
+            height: 100vh;
+            background: #d2e9f8;
+        }
+        #projects .text{
+            padding-top: 120px;
+            padding-left: 80px;
+        }
+
+        #experience{
+            padding: 16rem 0;
+        }
+
+        #contact {
+            padding-top: 200px;
+            background:#f5bfad;
+            height: 100vh;
+        }
+        form {
+            width:500px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 550px;
+            margin-top: 50px;
+        }
+
+
+
+        form input, form textarea, form button {
+            margin-bottom: 15px;
+            padding: 0.5em;
+            font-size: 1em;
+        }
+        form textarea{
+            height: 200px;
+        }
+
+        form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #949593;
+        }
+        footer p {
+            
+            margin: 0;
+        }
+
+        /* Custom Styles for "My Portfolio" */
+        #branding h1 {
+            font-size: 24px;
+            position: relative;
+            display: inline-block;
+            border: 2px solid white; /* Border with white color */
+            padding: 5px 10px; /* Adding padding to give some space around the text */
+        }
+
+        #branding h1::after {
+            content: ' ';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(225, 182, 193); /* Background color */
+            mix-blend-mode: screen;
+            z-index: -1;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            text-shadow: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1>MY PORTFOLIO</h1>
+            <p></p>
+        </div>
+        <nav>
+            <ul>
+                 <li><a href="#home">🏠Home</a></li>
+                <li><a href="#about">👩‍💼 About Me</a></li>
+                
+                <li><a href="#projects">🚀 Projects</a></li>
+                <li><a href="#contact">📞 Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="home">
+    <div class="text">
+        <p style="font-size: 20px;color: #555;font-weight:500;">Hey,I'm Likhitha Allada</p>
+        <p style="font-size: 55px;font-weight: 600;">I enjoy designing tech websites and digital products.....</p>
+        <button><a href="#contact" >Get In Touch </a></button>
+    </div>
+    <img src="./Image.jpeg" alt="image">
+</section>
+
+<section id="about"> 
+    <div id="text">
+        <h2>👩‍💼 About Me</h2>
+        <p>I am Allada Sai Likhitha, a student at ANDHRA UNIVERSITY College of Engineering. I am passionate about creating dynamic and user-friendly websites. My goal is to continuously improve my skills and contribute to exciting projects.</p>
+    </div>
+    <div id="boxes">
+        <div id="box">
+            <h3>Education</h3>
+        <p>2021-2025|ANDHRA UNIVERSITY
+            <li>Bachelor of Technology-Computer Science Engineering(CSE)</li>
+           2019-2021|NARAYANA Jr COLLEGE
+            <li>Intermediate-MPC</li></p>
+        </div>
+        <div id="box"><h3>Experience</h3>
+            <p>Intrainz Edutech (June 2023 - August 2023)
+    AI-powered Personalized Learning Platform Internship
+    Utilized Python, TensorFlow, and pandas for data analysis and model development.
+    Collaborated with engineers and educators to design and test the recommendationsystem.
+    Gained valuable experience in the application of AI for educational technology.</p></div>
+    </div>
+    <div id="skills">
+        <h1>💻Skills</h1>
+<ul>
+    <p>Front-end and back-end web development</p>
+    <p>MySQL</p>
+    <p>Programming languages:Python, Java, C, C++ </p>
+</ul>
+    </div>
+    
+</section>
+<section id="projects">
+    <div class="text">
+        <h2 style="margin-left: 600px;">🚀Projects</h2>
+        <p style="font-weight: 700;margin-top: 28px;">E-waste Locator Website (Smart India Hackathon)<p>
+            <p style="font-weight: 600;">Project Summary:</p>
+            <li>Developed a full-stack web application to facilitate responsible e-waste disposal and promote environmentalsustainability.</li>
+            <p style="font-weight: 600;">Technologies Used:</p>
+            <li>Frontend
+: HTML, CSS, JavaScript</li>
+             <li>Backend
+: Express, Node.js</li>
+<p style="font-weight: 600;">Key Responsibilities:</p>
+<p style="font-weight: 500;">Frontend Development:</p>
+<li>Created intuitive user interfaces with clear navigation and visual appeal.</li>
+<li>Enhanced user experience through interactive elements and responsiveness across devices.</li>
+<p style="font-weight: 500;">Backend Development:</p>
+<li>Designed a robust RESTful API to handle user requests and data management securely.</li>
+<li>Integrated database for storing and retrieving e-waste collection center information effectively.</li>
+<li>Implemented robust search functionality and mapping capabilities to streamline user interactions.</li>
+<p style="font-weight: 600;">Team Collaboration:</p>
+<li>Contributed effectively within a team environment to achieve project goals.</li>
+<li>Collaborated with teammates to integrate frontend and backend components seamlessly.</li>
+</div>
+</section>
+
+<section id="contact">
+    <div style="text-align: center;">
+        
+                <h2>📞Contact</h2>
+                <form id="contact-form">
+                    <!-- <label for="name">Name:</label> -->
+                    <input style="width: 500px;" type="text" id="name" placeholder="Enter Name Here " name="name" required>
+                    <input type="email" id="email" name="email" placeholder="Enter Email " required>
+                    <textarea id="message" name="message" placeholder="Enter Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <p>Vizianagaram,AndhraPradesh |+91 9346824484 | Email: <a href="mailto:likhitha.allada528@gmail.com">likhitha.allada528@gmail.com</a></p>
+            </div>
+        </section>
+    
+      
+        
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <p>Allada Sai Likhitha &copy. All rights reserved.; 2024</p>
+    </div>
+</footer>
+</body>
+</html>
